@@ -15,11 +15,14 @@ CollectionGenerator.prototype.createFiles = function createModelFiles() {
   var collectionDestFile = path.join('app/collections', this.name + '.js');
   var jsName = this._.classify(this.name);
   var template = [
-    'define(',
-    '  function () {',
+    'define([',
+    '  \'some/Model/Path\'',
+    '],',
+    '  function (Model) {',
     '    \'use strict\';',
     '',
     '    var ' + jsName + 'Collection = Backbone.Collection.extend({',
+    '      model: Model',
     '    });',
     '',
     '    return ' + jsName + 'Collection;',
