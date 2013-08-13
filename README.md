@@ -2,7 +2,7 @@
 
 Dependencies: 
 
-    npm install -g yo generator-generator
+    npm install -g yo
 
 Link this folder (name should be generator-bbi) with 
 
