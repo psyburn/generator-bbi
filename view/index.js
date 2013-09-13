@@ -32,7 +32,7 @@ ViewGenerator.prototype.createFiles = function createModelFiles() {
     '  \'use strict\';',
     '',
     '  var '+ jsName +'View = Backbone.View.extend({',
-    '    className: \''+ className +'\'',,
+    '    className: \''+ className +'\',',
     '    template: app.fetchTemplate(\''+ this.name +'\'),',
     '',
     '    events: {',
